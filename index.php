@@ -1,3 +1,13 @@
+<!--<?php
+/*
+session_start();
+if (!isset($_SESSION['username'])) {
+header('location:sign-up.php');	
+}*/
+?>-->
+
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -38,10 +48,22 @@
                         <a href="#" class="nav-link current">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link">Developers</a>
+                        <a href="about.php" class="nav-link">Developers</a>
                     </li>
+
                     <li class="nav-item">
-                        <a href="sign-up.html" class="nav-link">SIGN-IN</a>
+                    	<?php
+
+							session_start();
+							if (isset($_SESSION['username'])) {
+							echo "<a href='sign-up.php' class='nav-link current' target='_blank'>$name</a>";
+							//header('location:sign-up.php');	
+							}
+							else{
+								echo "<a href='sign-up.php' class='nav-link current'>sign-up</a>";
+							}
+
+						?>
                     </li>
                 </ul>
 
