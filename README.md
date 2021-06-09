@@ -1,4 +1,4 @@
-<h1 align="center">TechDeck</h1>
+<h1 align="center">Tech Deck</h1>
 <div align="center">
   
 <a href="https://github.com/Jimmy5467/TechDeck/stargazers"><img src="https://img.shields.io/github/stars/Jimmy5467/TechDeck?style=flat-square"/></a> 
